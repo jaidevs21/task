@@ -1,0 +1,6 @@
+- name: "REMOVE USER"
+  user:
+    name: "{{ USERNAME }}"
+    state: absent
+    remove: yes
+    home: absent

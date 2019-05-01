@@ -1,0 +1,9 @@
+- name: "CREATE USER"
+  user:
+    name: "{{ USERNAME }}"
+    shell: /bin/bash
+
+- name: "ADD SSH KEY"
+  authorized_key:
+    user: "{{ USERNAME }}" 
+    key:  "{{ PUBLIC_KEY }}"

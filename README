@@ -1,0 +1,12 @@
+Kindly add relative path in grant.yml and revoke.yml
+
+
+To create user and grant access to him.
+Step 1: add username and Public key in vars/env file.
+Step 2: Run below Command   
+        ansible-playbook grant.yml
+
+To Remove User
+Step 1: add username in vars/env file.
+Step 2: Run below command
+        ansible-playbook revoke.yml
